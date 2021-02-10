@@ -1,0 +1,37 @@
+.contenedor-foto {
+  margin-bottom: 100px;
+}
+
+.miembros-equipo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tarjeta-miembro {
+  display: grid;
+  grid-template-areas:
+    "foto"
+    "nombre"
+    "descripcion";
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 10% 10%;
+  height: 330px;
+  box-shadow: 0px 0px 2px 1px rgba(24, 24, 24, 0.26);
+  margin: 0px 1px 100px 0px;
+  max-width: 250px;
+  padding: 0px 0px 0px 0px;
+}
+.foto-miembro {
+  grid-area: foto;
+  object-fit: cover;
+}
+.nombre-miembro {
+  grid-area: nombre;
+  text-align: center;
+}
+.descripcion-miembro {
+  grid-area: descripcion;
+  text-align: center;
+}

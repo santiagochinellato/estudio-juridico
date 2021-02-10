@@ -1,0 +1,21 @@
+.quienes-somos {
+  margin: 50px 0px 50px 0px;
+
+  .quienes-somos__titulo-h1 {
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+    font-size: 40px;
+  }
+}
+
+.seccion-presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  .seccion-presentacion__texto-presentacion {
+    text-align: justify;
+    font-size: 15px;
+  }
+}
