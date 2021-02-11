@@ -56,7 +56,7 @@
     <section class="quienes-somos">
       <!-- quienes somos -->
       <div class="container ">
-        <h1 class="quienes-somos__titulo-h1 col-md-12">Nuestro Estudio</h1>
+        <h1 class="quienes-somos__titulo-h1 col-md-22">Nuestro Estudio</h1>
         <div class="seccion-presentacion row">
           <img class="seccion-presentacion__foto-presentacion img-fluid col-md-4" src="./images/imagen-muestra-1.jpg"
             alt="">
@@ -196,8 +196,104 @@
       </div>
 
     </section>
-    <section>
-      <!-- contacto -->
+    <section class="container-fluid">
+      <h2 class="subtitulos"> Contáctenos</h2>
+      <div class="contacto-datos row">
+        <form class="form-horizontal col-md-8">
+          <fieldset class="contenedor-formulario">
+            <!-- Form Name -->
+            <!-- <legend>Form Name</legend> -->
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Textinput">Nombre</label>
+              <div class="col-md-4">
+                <input id="Textinput" name="Textinput" type="text" placeholder="Nombre" class="form-control input-md"
+                  required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Textinput">Apellido</label>
+              <div class="col-md-4">
+                <input id="Textinput" name="Textinput" type="text" placeholder="Apellido" class="form-control input-md"
+                  required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="phone">Teléfono</label>
+              <div class="col-md-4">
+                <input id="phone" name="phone" type="text" placeholder="Ej. +54 9 294 222222"
+                  class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="email">E-mail</label>
+              <div class="col-md-4">
+                <input id="email" name="email" type="text" placeholder="ejemplo@ejemplo.com"
+                  class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="seleccionarbásico">Tipo de consulta</label>
+              <div class="col-md-4">
+                <select id="seleccionarbásico" name="seleccionarbásico" class="form-control">
+                  <option value="Derecho Administrativo">Derecho Administrativo</option>
+                  <option value="Derecho Civil y Comercial">Derecho Civil y Comercial</option>
+                  <option value="Derecho de Familia">Derecho de Familia</option>
+                  <option value="Derecho laboral">Derecho laboral</option>
+                  <option value="Derecho laboral">Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Textarea">Consulta</label>
+              <div class="col-md-4">
+                <textarea class="form-control" cols="50" rows="10" id="Textarea"
+                  name="Textarea">Escriba su consulta aquí</textarea>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="singlebutton">Enviar</label>
+              <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-success">Enviar</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+        <div class="informacion-contacto col-md-4 row">
+          <h4 class="titulo-contacto">Donde Encontrarnos</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.4971339366566!2d-71.30908652810672!3d-41.134651097602756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b727d5d2173%3A0x7a4b543e4abcc6f3!2sFrancisco%20Perito%20Moreno%20108%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1612999257086!5m2!1ses-419!2sar"
+            class="mapa-contacto " width="315px" height="250px" frameborder="0" style="border:0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0">
+          </iframe>
+          <img class="logo-ubicacion" width="30px" height="30px" src="./images/ubicacion-logo.png" alt="">
+          <p class="texto-ubicacion">Lorem ipsum dolor sit amet.</p>
+          <img class="logo-horario" width="30px" height="30px" src="./images/reloj-logo.png" alt="">
+          <p class="texto-horario">Lorem ipsum dolor sit amet.</p>
+          <img class="logo-telefono" width="30px" height="30px" src="./images/contacto-logo.png" alt="">
+          <p class="texto-telefono">Lorem ipsum dolor sit amet.</p>
+          <img class="logo-correo" width="30px" height="30px" src="./images/correo-logo.png" alt="">
+          <p class="texto-correo">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
     </section>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

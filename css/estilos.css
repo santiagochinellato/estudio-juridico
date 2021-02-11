@@ -89,11 +89,10 @@
 .titulo-tarjeta {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: titulo;
-  -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
       align-self: end;
 }
 
@@ -174,6 +173,159 @@
 .item {
   width: 250px;
   height: auto;
+}
+
+.contactos-datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 30px 0px !important;
+  padding: 0px 0px 0px 0px;
+}
+
+.control-label {
+  font-size: 15px;
+}
+
+.form-control {
+  font-size: 12px;
+}
+
+.informacion-contacto {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo" "mapa mapa" "logo-ubicacion texto-ubicacion" "logo-horario texto-horario" "logo-telefono texto-telefono" "logo-correo texto-correo";
+  -ms-grid-columns: 10% 65%;
+      grid-template-columns: 10% 65%;
+  -ms-grid-rows: 5% 50% 10% 10% 10% 10%;
+      grid-template-rows: 5% 50% 10% 10% 10% 10%;
+}
+
+.informacion-contacto .titulo-contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  margin: 0px 0px 0px 0px;
+}
+
+.informacion-contacto .mapa-contacto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mapa;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.informacion-contacto .logo-ubicacion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: logo-ubicacion;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.informacion-contacto .texto-ubicacion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: texto-ubicacion;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0px 0px 0px 10px;
+  font-size: 13px;
+}
+
+.informacion-contacto .logo-horario {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: logo-horario;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.informacion-contacto .texto-horario {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: texto-horario;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0px 0px 0px 10px;
+  font-size: 13px;
+}
+
+.informacion-contacto .logo-telefono {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: logo-telefono;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.informacion-contacto .texto-telefono {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: texto-telefono;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0px 0px 0px 10px;
+  font-size: 13px;
+}
+
+.informacion-contacto .logo-correo {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: logo-correo;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.informacion-contacto .texto-correo {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: texto-correo;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0px 0px 0px 10px;
+  font-size: 13px;
 }
 
 html,
