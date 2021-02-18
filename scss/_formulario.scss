@@ -1,42 +1,55 @@
 .seccion-contacto {
-  margin: 0px 0px 150px 0px;
+  margin-bottom: 150px;
 }
 .contactos-datos {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.contenedor-formulario {
+  max-width: 600px;
 }
 .form-group {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0px 0px 30px 0px !important;
   padding: 0px 0px 0px 0px;
 }
 .control-label {
   font-size: 15px;
+  max-width: 100px;
 }
 
 .form-control {
   font-size: 12px;
 }
 
+.btn-success {
+  width: 100px;
+  height: 40px;
+  background-color: #700f0e;
+  border: #700f0e;
+  font-size: 15px;
+}
+
 .informacion-contacto {
   display: grid;
   grid-template-areas:
-    "titulo titulo"
+    // "titulo titulo"
+
     "mapa mapa"
     "logo-ubicacion texto-ubicacion"
     "logo-horario texto-horario"
     "logo-telefono texto-telefono"
     "logo-correo texto-correo";
-  grid-template-columns: 10% 65%;
-  grid-template-rows: 5% 50% 10% 10% 10% 10%;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 40% 10% 10% 10% 10%;
 
-  .titulo-contacto {
-    grid-area: titulo;
-    margin: 0px 0px 0px 0px;
-  }
+  // .titulo-contacto {
+  //   grid-area: titulo;
+  //   margin: 0px 0px 0px 0px;
+  // }
   .mapa-contacto {
     grid-area: mapa;
     justify-self: stretch;
@@ -44,46 +57,46 @@
   }
   .logo-ubicacion {
     grid-area: logo-ubicacion;
-    align-self: center;
+    align-self: end;
     justify-self: center;
   }
   .texto-ubicacion {
     grid-area: texto-ubicacion;
-    align-self: center;
+    align-self: end;
     margin: 0px 0px 0px 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .logo-horario {
     grid-area: logo-horario;
-    align-self: center;
+    align-self: end;
     justify-self: center;
   }
   .texto-horario {
     grid-area: texto-horario;
-    align-self: center;
+    align-self: end;
     margin: 0px 0px 0px 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .logo-telefono {
     grid-area: logo-telefono;
-    align-self: center;
+    align-self: end;
     justify-self: center;
   }
   .texto-telefono {
     grid-area: texto-telefono;
-    align-self: center;
+    align-self: end;
     margin: 0px 0px 0px 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .logo-correo {
     grid-area: logo-correo;
-    align-self: center;
+    align-self: end;
     justify-self: center;
   }
   .texto-correo {
     grid-area: texto-correo;
-    align-self: center;
+    align-self: end;
     margin: 0px 0px 0px 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
   <link rel=" stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./css/estilos.css">
+  <link rel-"preconecte" href-"https://fonts.gstatic.com">
+  <link href-"https://fonts.googleapis.com/css2? familiaMontserrat:ital,wght@1,100&display-swap" rel-"stylesheet">
   <script src="./js/app.js"></script>
   <title>Document</title>
 </head>
@@ -22,11 +24,11 @@
         </div>
         <div id="mainListDiv" class="main_list">
           <ul class="navlinks">
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Aréa de Prácticas</a></li>
-            <li><a href="#">Miembros</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#nuestro-estudio">Nuestro Estudio</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#areas-especialidad">Aréas de Especialidad</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contactanos">Contáctanos</a></li>
           </ul>
         </div>
         <!-- <span class="navTrigger">
@@ -53,10 +55,14 @@
     </section>
   </header>
   <main>
-    <section class="quienes-somos">
+    <section id="nuestro-estudio" class="quienes-somos">
       <!-- quienes somos -->
       <div class="container ">
-        <h1 class="quienes-somos__titulo-h1 col-md-22">Nuestro Estudio</h1>
+        <div class="contenedor-titulo col-md-12 col-sm-12 col-xs-12">
+          <div class="contendor-titulo-2">
+            <h1 id="equipo" class="titulo-principal">Nuestro Estudio</h1>
+          </div>
+        </div>
         <div class="seccion-presentacion row">
           <img class="seccion-presentacion__foto-presentacion img-fluid col-md-4" src="./images/imagen-muestra-1.jpg"
             alt="">
@@ -89,7 +95,11 @@
     </section>
     <section class="seccion-equipo container">
       <!-- equipo -->
-      <h2 class="subtitulos">Nuestro Equipo</h2>
+      <div class="contenedor-subtitulo col-md-12 col-sm-12 col-xs-12">
+        <div class="contendor-subtitulo-2">
+          <h2 id="equipo" class="subtitulos">Nuestro Equipo</h2>
+        </div>
+      </div>
       <div class="contenedor-foto">
         <img class=" foto-equipo img-fluid" src="./images/equipo-abogado.jpg" alt="">
       </div>
@@ -139,7 +149,11 @@
     </section>
     <section class=" container area-de-practicas">
       <!-- area de practicas -->
-      <h3 class="subtitulos">Aréas de Prácticas</h3>
+      <div class="contenedor-subtitulo col-md-12 col-sm-12 col-xs-12">
+        <div class="contendor-subtitulo-2">
+          <h2 id="areas-especialidad" class="subtitulos">Aréas de Especialidad</h2>
+        </div>
+      </div>
       <div class="areas row">
         <div class="contenedor-tarjeta col-md-3">
           <div class="icono">
@@ -179,10 +193,13 @@
         </div>
       </div>
     </section>
-    <section class="clientes">
+    <section id="clientes" class=" container clientes">
       <!-- clientes -->
-      <h2 class="subtitulos">Nuestros Clientes</h2>
-
+      <div class="contenedor-subtitulo">
+        <div class="contendor-subtitulo-2">
+          <h2 class="subtitulos">Nuestros Clientes</h2>
+        </div>
+      </div>
       <!-- carousel -->
 
       <div class="owl-carousel">
@@ -196,18 +213,22 @@
       </div>
 
     </section>
-    <section class="container-fluid seccion-contacto">
-      <h2 class="subtitulos"> Contáctenos</h2>
+    <section class="container seccion-contacto">
+      <div class="contenedor-subtitulo col-md-12 col-sm-12 col-xs-12">
+        <div class="contendor-subtitulo-2">
+          <h2 id="contactanos" class="subtitulos">Contáctenos</h2>
+        </div>
+      </div>
       <div class="contacto-datos row">
-        <form class="form-horizontal col-md-8">
+        <form class="form-horizontal col-md-7">
           <fieldset class="contenedor-formulario">
             <!-- Form Name -->
             <!-- <legend>Form Name</legend> -->
 
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="Textinput">Nombre</label>
-              <div class="col-md-4">
+              <!-- <label class="col-md-3 control-label" for="Textinput">Nombre</label> -->
+              <div class="col-md-9">
                 <input id="Textinput" name="Textinput" type="text" placeholder="Nombre" class="form-control input-md"
                   required="">
 
@@ -216,8 +237,8 @@
 
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="Textinput">Apellido</label>
-              <div class="col-md-4">
+              <!-- <label class="col-md-3 control-label" for="Textinput">Apellido</label> -->
+              <div class="col-md-9">
                 <input id="Textinput" name="Textinput" type="text" placeholder="Apellido" class="form-control input-md"
                   required="">
 
@@ -226,8 +247,8 @@
 
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="phone">Teléfono</label>
-              <div class="col-md-4">
+              <!-- <label class="col-md-3 control-label" for="phone">Teléfono</label> -->
+              <div class="col-md-9">
                 <input id="phone" name="phone" type="text" placeholder="Ej. +54 9 294 222222"
                   class="form-control input-md" required="">
 
@@ -236,8 +257,8 @@
 
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="email">E-mail</label>
-              <div class="col-md-4">
+              <!-- <label class="col-md-3 control-label" for="email">E-mail</label> -->
+              <div class="col-md-9">
                 <input id="email" name="email" type="text" placeholder="ejemplo@ejemplo.com"
                   class="form-control input-md" required="">
 
@@ -246,8 +267,8 @@
 
             <!-- Select Basic -->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="seleccionarbásico">Tipo de consulta</label>
-              <div class="col-md-4">
+              <!-- <label class="col-md-3 control-label" for="seleccionarbásico">Tipo de consulta</label> -->
+              <div class="col-md-9">
                 <select id="seleccionarbásico" name="seleccionarbásico" class="form-control">
                   <option value="Derecho Administrativo">Derecho Administrativo</option>
                   <option value="Derecho Civil y Comercial">Derecho Civil y Comercial</option>
@@ -260,38 +281,38 @@
 
             <!-- Textarea -->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="Textarea">Consulta</label>
-              <div class="col-md-4">
-                <textarea class="form-control" cols="50" rows="10" id="Textarea"
-                  name="Textarea">Escriba su consulta aquí</textarea>
+              <!-- <label class="col-md-3 control-label" for="Textarea">Consulta</label> -->
+              <div class="col-md-9">
+                <textarea class="form-control" cols="50" rows="10" id="Textarea" name="Textarea"
+                  placeholder="Escriba su Consulta Aquí"></textarea>
               </div>
             </div>
 
             <!-- Button -->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="singlebutton">Enviar</label>
-              <div class="col-md-4">
-                <button id="singlebutton" name="singlebutton" class="btn btn-success">Enviar</button>
+              <!-- <label class="col-md-3 control-label" for="singlebutton">Enviar</label> -->
+              <div class="col-md-9">
+                <button id="singlebutton" name="singlebutton" class="btn btn-success btn-lg">Enviar</button>
               </div>
             </div>
 
           </fieldset>
         </form>
         <div class="informacion-contacto col-md-4 row">
-          <h4 class="titulo-contacto">Donde Encontrarnos</h4>
+          <!-- <h4 class="titulo-contacto">Donde Encontrarnos</h4> -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.4971339366566!2d-71.30908652810672!3d-41.134651097602756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b727d5d2173%3A0x7a4b543e4abcc6f3!2sFrancisco%20Perito%20Moreno%20108%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1612999257086!5m2!1ses-419!2sar"
-            class="mapa-contacto " width="315px" height="250px" frameborder="0" style="border:0;" allowfullscreen=""
+            class="mapa-contacto " width="350px" height="225px" frameborder="0" style="border:0;" allowfullscreen=""
             aria-hidden="false" tabindex="0">
           </iframe>
           <img class="logo-ubicacion" width="30px" height="30px" src="./images/ubicacion-logo.png" alt="">
-          <p class="texto-ubicacion">Lorem ipsum dolor sit amet.</p>
+          <p class="texto-ubicacion">Moreno 100, 5to piso, San carlos de Bariloche, Argentina CP 8400.</p>
           <img class="logo-horario" width="30px" height="30px" src="./images/reloj-logo.png" alt="">
-          <p class="texto-horario">Lorem ipsum dolor sit amet.</p>
+          <p class="texto-horario">Lunes a Viernes de 9:00hs a 13:00hs / 16:00hs a 20:00hs</p>
           <img class="logo-telefono" width="30px" height="30px" src="./images/contacto-logo.png" alt="">
-          <p class="texto-telefono">Lorem ipsum dolor sit amet.</p>
+          <p class="texto-telefono">+54 9 294 4222222 / 555222.</p>
           <img class="logo-correo" width="30px" height="30px" src="./images/correo-logo.png" alt="">
-          <p class="texto-correo">Lorem ipsum dolor sit amet.</p>
+          <p class="texto-correo">estudiojuridico@mail.com / estudio@consultas.com</p>
         </div>
       </div>
     </section>
@@ -300,28 +321,26 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming
-              programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code
-              wants to be simple. We will help programmers build up concepts in different programming languages that
-              include
-              C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <h6 class="subtitulos-footer">Información</h6>
+            <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, omnis cum?
+              Consequuntur quod amet laudantium voluptates porro, neque recusandae modi maiores cum nesciunt dolores
+              harum soluta sequi. Sequi laudantium, veniam atque reprehenderit, dolorum magni esse excepturi ipsum vitae
+              totam quo impedit. Hic voluptates qui cupiditate distinctio suscipit impedit eaque asperiores?.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
+            <h6 class="subtitulos-footer">Mapa del Sitio</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              <li><a href="#nuestro-estudio">Nuestro Estudio</a></li>
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#areas-especialidad">Aréas de Especialidad</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li><a href="#contactanos">Contáctanos</a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
+            <h6 class="subtitulos-footer">Links de Interés</h6>
             <ul class="footer-links">
               <li><a href="http://scanfcode.com/about/">About Us</a></li>
               <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
@@ -336,19 +355,19 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-              <a href="#">Scanfcode</a>.
+            <p class="copyright-text">Copyright &copy; 2021 Todos los Derechos Reservados.
+              <a href="#">PixelClub</a>.
             </p>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- <div class="col-md-9 col-sm-6 col-xs-12">
             <ul class="social-icons">
               <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
               <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
