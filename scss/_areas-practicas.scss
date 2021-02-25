@@ -17,6 +17,25 @@
   transform: scale(1.1);
   z-index: 1;
 }
+// mediaquerys
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .areas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contenedor-tarjeta {
+    display: flex;
+    position: relative;
+    margin: 50px 0px 50px 0px;
+  }
+
+  .contenedor-tarjeta:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+}
 
 .icono {
   position: absolute;
@@ -27,9 +46,9 @@
   align-items: center;
   left: 90px;
   top: -50px;
-  background: #d5d5d5;
+  background: #700f0e;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px 1px #d5d5d5;
+  box-shadow: 0px 0px 2px 1px #700f0e;
 }
 // .icono:hover {
 //   transition: 1s;
@@ -45,7 +64,7 @@
   grid-template-rows: 50% 40%;
   width: 250px;
   height: 200px;
-  box-shadow: 0px 0px 2px 1px #d5d5d5;
+  box-shadow: 0px 0px 2px 1px #700f0e;
 }
 
 // .tarjeta:hover {
@@ -84,4 +103,23 @@
   align-self: center;
   margin: 0px 10px 0px 10px;
   text-align: justify;
+}
+
+@media (max-width: 575.98px) {
+  .areas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contenedor-tarjeta {
+    display: flex;
+    position: relative;
+    margin: 50px 0px 50px 140px;
+  }
+
+  .contenedor-tarjeta:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+  }
 }

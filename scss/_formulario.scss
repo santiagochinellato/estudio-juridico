@@ -59,6 +59,8 @@
     grid-area: logo-ubicacion;
     align-self: end;
     justify-self: center;
+    border-radius: 50%;
+    background: #700f0e;
   }
   .texto-ubicacion {
     grid-area: texto-ubicacion;
@@ -70,6 +72,8 @@
     grid-area: logo-horario;
     align-self: end;
     justify-self: center;
+    border-radius: 50%;
+    background: #700f0e;
   }
   .texto-horario {
     grid-area: texto-horario;
@@ -81,22 +85,180 @@
     grid-area: logo-telefono;
     align-self: end;
     justify-self: center;
+    border-radius: 50%;
+    background: #700f0e;
   }
   .texto-telefono {
     grid-area: texto-telefono;
     align-self: end;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 10px 10px;
     font-size: 12px;
   }
   .logo-correo {
     grid-area: logo-correo;
     align-self: end;
     justify-self: center;
+    border-radius: 50%;
+    background: #700f0e;
   }
   .texto-correo {
     grid-area: texto-correo;
     align-self: end;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 10px 10px;
     font-size: 12px;
+  }
+}
+
+// mediaquerys
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .informacion-contacto {
+    display: grid;
+    margin: 150px 0px 50px 0px "mapa mapa" "logo-ubicacion texto-ubicacion"
+      "logo-horario texto-horario" "logo-telefono texto-telefono"
+      "logo-correo texto-correo";
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 40% 12% 12% 12% 12%;
+
+    .mapa-contacto {
+      grid-area: mapa;
+      justify-self: stretch;
+      align-self: center;
+      width: auto !important;
+      margin: 50px 0px 50px 0px;
+    }
+    .logo-ubicacion {
+      grid-area: logo-ubicacion;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+      margin-top: 50px;
+    }
+    .texto-ubicacion {
+      grid-area: texto-ubicacion;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+    .logo-horario {
+      grid-area: logo-horario;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+    }
+    .texto-horario {
+      grid-area: texto-horario;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+    .logo-telefono {
+      grid-area: logo-telefono;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+    }
+    .texto-telefono {
+      grid-area: texto-telefono;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+    .logo-correo {
+      grid-area: logo-correo;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+    }
+    .texto-correo {
+      grid-area: texto-correo;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contenedor-formulario {
+    max-width: 400px !important;
+    margin-left: 65px;
+  }
+
+  .informacion-contacto {
+    display: grid;
+    margin: 50px 0px 50px 60px;
+    grid-template-areas:
+      "mapa mapa"
+      "logo-ubicacion texto-ubicacion"
+      "logo-horario texto-horario"
+      "logo-telefono texto-telefono"
+      "logo-correo texto-correo";
+    grid-template-columns: 10% 70%;
+    grid-template-rows: 40% 12% 12% 12% 12%;
+
+    .mapa-contacto {
+      grid-area: mapa;
+      justify-self: stretch;
+      align-self: center;
+      width: 410px;
+      margin: 0px 10px 50px 0px;
+    }
+    .logo-ubicacion {
+      grid-area: logo-ubicacion;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+      margin-top: 50px;
+    }
+    .texto-ubicacion {
+      grid-area: texto-ubicacion;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+    .logo-horario {
+      grid-area: logo-horario;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+    }
+    .texto-horario {
+      grid-area: texto-horario;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+    .logo-telefono {
+      grid-area: logo-telefono;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+    }
+    .texto-telefono {
+      grid-area: texto-telefono;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
+    .logo-correo {
+      grid-area: logo-correo;
+      align-self: end;
+      justify-self: center;
+      border-radius: 50%;
+      background: #700f0e;
+    }
+    .texto-correo {
+      grid-area: texto-correo;
+      align-self: center;
+      margin: 10px 0px 0px 10px;
+      font-size: 12px;
+    }
   }
 }
