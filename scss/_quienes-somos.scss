@@ -19,3 +19,38 @@
     font-size: 15px;
   }
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .seccion-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    .seccion-presentacion__texto-presentacion {
+      text-align: justify;
+      font-size: 15px;
+      margin: 25px 0px 25px 0px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .seccion-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px 0px 30px;
+
+    .seccion-presentacion__foto-presentacion {
+      width: auto;
+      object-fit: cover;
+    }
+
+    .seccion-presentacion__texto-presentacion {
+      text-align: justify;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  }
+}
